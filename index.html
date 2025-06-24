@@ -13,47 +13,56 @@
 
 <body>
 
-    <div>
-        <div class="text-center d-flex justify-content-center mt-5">
-            <div class="card bg-dark row">
-
+    <div class="container-fluid">
+        <div class="text-center mt-5 d-flex justify-content-center">
+            <div class="card bg-dark pb-5 w-25">
                 <!-- interface -->
-                <div class="text-white mt-5 pt-3 rounded body">
-                    <p id="affichage">0</p>
+                <div class="mt-5 pt-3 bg-dark text-white text-end rounded ms-5 mx-5 pb-5">
+                    <div id="nb1">
+                        
+                    </div>
+
+                    <div id="operande">
+
+                    </div>
+                    <div id="nb2">
+                        
+                    </div>
+                    <div id="result">
+
+                    </div>
                 </div>
 
-                <div class="row">
-                    <hr>
+                <hr>
 
-                    <!-- 1ère partie -->
-                    <div class="mt-3 pt-3 premier_partie">
-                        <button class="rounded mt-3 p-2 ps-3 px-3" onclick="soustraction()">/</button>
-                        <button class="rounded mt-4 p-2 ps-3 px-3" onclick="multiplication()">*</button>
-                        <button class="rounded mt-4 p-2 ps-3 px-3" onclick="calculer()">=</button>
+                    <div class="mt-3">
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="effacerNombre()">AC</button>
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="afficherNombre(0)">0</button>
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="result()">=</button>
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="addOperande('-')">-</button>
                     </div>
 
-                    <!-- 2nd partie -->
-                    <div class="mt-3 pt-3 seconde_partie">
-                        <button class="rounded mt-3 p-2 ps-3 px-3" onclick="afficherNombre(9)">9</button>
-                        <button class="rounded mt-4 p-2 ps-3 px-3" onclick="afficherNombre(8)">8</button>
-                        <button class="rounded mt-4 p-2 ps-3 px-3" onclick="afficherNombre(7)">7</button>
-                        <button class="rounded mt-3 p-2 ps-3 px-3" onclick="afficherNombre(6)">6</button>
-                        <button class="rounded mt-4 p-2 ps-3 px-3" onclick="afficherNombre(5)">5</button>
-                        <button class="rounded mt-4 p-2 ps-3 px-3" onclick="afficherNombre(4)">4</button>
-                        <button class="rounded mt-3 p-2 ps-3 px-3" onclick="afficherNombre(3)">3</button>
-                        <button class="rounded mt-4 p-2 ps-3 px-3" onclick="afficherNombre(2)">2</button>
-                        <button class="rounded mt-4 p-2 ps-3 px-3" onclick="afficherNombre(1)">1</button>
-                        <button class="rounded mt-3 p-2 ps-3 px-3" onclick="afficherNombre(0)">0</button>
+                    <div class="mt-3">
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="afficherNombre(7)">7</button>
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="afficherNombre(8)">8</button>
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="afficherNombre(9)">9</button>
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="addOperande('+')">+</button>
+
                     </div>
 
-                    <!-- 3eme partie -->
-                    <div class="mt-3 pt-3 troisieme_partie">
-                        <button class="rounded mt-3 p-2 ps-3 px-3" onclick="additionner()">+</button>
-                        <button class="rounded mt-4 p-2 ps-3 px-3" onclick="soustraction()">-</button>
-                        <button class="rounded mt-4 p-2 ps-3 px-3" onclick="effacerNombre()">AC</button>
+                    <div class="mt-3">
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="afficherNombre(4)">4</button>
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="afficherNombre(5)">5</button>
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="afficherNombre(6)">6</button>
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="addOperande('*')">*</button>
                     </div>
 
-                </div>
+                    <div class="mt-3">
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="afficherNombre(1)">1</button>
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="afficherNombre(2)">2</button>
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="afficherNombre(3)">3</button>
+                        <button class="rounded col-2 p-3 ms-2 mx-2" onclick="addOperande('/')">/</button>
+                    </div>
 
             </div>
         </div>
