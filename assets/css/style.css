@@ -1,37 +1,9 @@
-.card {
-    width: 27rem;
-    height: 30rem;
-    margin-top: 6rem;
-}
-
-.body {
-    width: 22rem;
-    margin-left: 2.5rem;
-    border: 2px solid orange;
-    background-color: black;
-
-}
-
-.premier_partie {
-    margin-left: 2.5rem;
-    width: 5rem;
-}
-
-.seconde_partie {
-    width: 12rem;
-}
-
-.troisieme_partie {
-    width: 5rem;
-}
-
 button {
-    background-color: black;
-    color: orange;
-    border: 2px solid orange;
+    color: white;
+    background-color:orange
 }
 
 button:hover {
-    background-color: orange;
-    color: white;
+    color: orange;
+    background-color: white;
 }
